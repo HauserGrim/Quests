@@ -25,12 +25,12 @@
         <repository>
             <!-- Citizens, Denizen -->
             <id>citizens-repo</id>
-            <url>http://repo.citizensnpcs.co/</url>
+            <url>https://repo.citizensnpcs.co/</url>
         </repository>
         <repository>
             <!-- WorldEdit -->
             <id>sk89q-repo</id>
-            <url>http://maven.sk89q.com/repo/</url>
+            <url>https://maven.sk89q.com/repo/</url>
         </repository>
         <repository>
             <!-- Parties -->
@@ -40,12 +40,7 @@
         <repository>
             <!-- PlaceholderAPI -->
             <id>papi-repo</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
-        </repository>
-        <repository>
-            <!-- Heroes, Vault -->
-            <id>hc-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
     </repositories>
     
@@ -84,7 +79,8 @@
             <groupId>com.herocraftonline.heroes</groupId>
             <artifactId>heroes-stripped</artifactId>
             <version>4dd3dd85</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/heroes-stripped-4dd3dd85.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.sk89q.worldedit</groupId>
@@ -122,11 +118,20 @@
             <version>3.1.6</version>
             <scope>provided</scope>
         </dependency>
+        <!--
         <dependency>
             <groupId>com.github.DRE2N</groupId>
             <artifactId>DungeonsXL</artifactId>
             <version>5e7b28ea55</version>
             <scope>provided</scope>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>de.erethon.dungeonsxl</groupId>
+            <artifactId>dungeonsxl-dist</artifactId>
+            <version>0.18-SNAPSHOT-1100</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/dungeonsxl-dist-0.18-SNAPSHOT-1100.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.github.PikaMug</groupId>
