@@ -63,6 +63,7 @@ public class NpcListener implements Listener {
                     + Lang.get("id") + ": "  + evt.getNPC().getId());
             return;
         }
+        /*
         if (evt.getClicker().isConversing() == false) {
             final Player player = evt.getClicker();
             final Quester quester = plugin.getQuester(player.getUniqueId());
@@ -256,6 +257,7 @@ public class NpcListener implements Listener {
                 }
             }
         }
+        */
     }
 
     @EventHandler

@@ -121,6 +121,7 @@ public class PlayerListener implements Listener {
                 return;
             }
         }
+        /*
         final Quester quester = plugin.getQuester(evt.getWhoClicked().getUniqueId());
         final Player player = (Player) evt.getWhoClicked();
         if (evt.getView().getTitle().contains(Lang.get(player, "quests"))) {
@@ -143,6 +144,7 @@ public class PlayerListener implements Listener {
                 evt.setCancelled(true);
             }
         }
+        */
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)
